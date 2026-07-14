@@ -25,7 +25,7 @@ $device_id = $headers["device"];
 
 $response = array();
 $error = array();
-
+//
 // Validate input parameters
 if (!empty($username) && !empty($password) && !empty($device_id)) {
 
