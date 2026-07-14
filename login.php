@@ -15,7 +15,7 @@ $headers_mixed = apache_request_headers();
 foreach ($headers_mixed as $header => $val) {
     $headers[trim(strtolower($header))] = $val;
 }
-
+//
 // Decode and extract login credentials
 $login_credentials = explode(":", base64_decode(str_replace('Basic ', '', $headers["authorization"])));
 $username = $login_credentials[0];

@@ -21,7 +21,7 @@ if (isset($_REQUEST["q"])) {
         $condition[] = " `ev_name` LIKE '%{$search_term}%'";
     }
 }
-//
+
 $condition[] = " `ev_id` != '1'";
 
 if (!empty($condition)) {
